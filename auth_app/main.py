@@ -19,7 +19,8 @@ def login(data: LoginData):
 
     if username not in USERS_DB:
         raise HTTPException(status_code=401, detail="Invalid credentials")
-        hashed_pw = USERS_DB[username]
+
+    hashed_pw = USERS_DB[username]
 
     if not bcrypt.checkpw(password, hashed_pw):
         raise HTTPException(status_code=401, detail="Invalid credentials")
