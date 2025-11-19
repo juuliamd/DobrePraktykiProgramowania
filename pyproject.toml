@@ -9,5 +9,6 @@ dependencies = [
     "bcrypt>=5.0.0",
     "fastapi[standard]>=0.119.0",
     "pyjwt>=2.10.1",
+    "pytest>=9.0.1",
     "sqlalchemy>=2.0.44",
 ]
