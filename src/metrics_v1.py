@@ -1,8 +1,5 @@
 def calculate_iou(boxA, boxB):
-    """
-    Oblicza Intersection over Union (IoU) dla dwóch ramek (boxów).
-    Format boxa: [x1, y1, x2, y2]
-    """
+    
     if not boxA or not boxB:
         return 0.0
 
@@ -25,12 +22,7 @@ def calculate_iou(boxA, boxB):
     return iou
 
 def calculate_final_grade(accuracy, total_time):
-    """
-    Wylicza ocenę na podstawie dokładności i czasu wykonania.
-    Zasady (przykładowe, dostosowane do wymogów):
-    - Czas > 60s -> Automatycznie 2.0 (niezaliczone)
-    - Dokładność < 60% -> 2.0
-    """
+   
     
     # 1. Warunek krytyczny: Czas
     if total_time > 60.0:
