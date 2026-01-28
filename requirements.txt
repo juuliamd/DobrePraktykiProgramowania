@@ -1,8 +1,7 @@
-fastapi
-uvicorn
-pika
-requests
-numpy
 opencv-python-headless
-pytest
-httpx
+numpy
+pandas
+ultralytics
+easyocr
+scikit-learn
+xmltodict  
