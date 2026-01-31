@@ -1,0 +1,28 @@
+# Virtual Environment files - ignore everything except this gitignore
+*
+!.gitignore
+
+# But specifically ignore these common venv files
+pyvenv.cfg
+pip-selfcheck.json
+
+# Ignore all installed packages
+Lib/
+Scripts/
+Include/
+lib/
+bin/
+share/
+
+# Ignore pip cache
+pip-cache/
+__pycache__/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore distribution info
+*.dist-info/
+*.egg-info/
